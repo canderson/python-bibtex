@@ -61,7 +61,10 @@ class BibtexRecord():
             ty = self.typemap.get(k, -1)
             x = _bibtex.expand(context, items[k], ty)
             if k == "month":
-                self.date[0] = BIBTEX_MONTHS[_bibtex.get_native(items[k])]
+                month = BIBTEX_MONTHS[_bibtex.get_native(items[k])]
+                self.date[0] = month
+                self.data["month"] = month
+                continue
             if ty == -1: ty = x[0]
             self.data[k] = self.build(ty, x)
         self.date[1] = self.data["year"]

@@ -1,0 +1,3 @@
+The best Python tool that I know of for parsing BibTeX is the "python-bibtex" package from the Pybliographer dev team. The project page is here: http://pybliographer.org/Download . The package is very smart in its parsing, but is frustratingly underdocumented (see, for instance, a Debian bug report making this complaint: [1]). This Python module is a wrapper for python-bibtex that makes its most simple functionality intuitively avaiable.
+
+[1] http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=471967
